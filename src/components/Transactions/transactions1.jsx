@@ -1,7 +1,7 @@
 import React from 'react';
 import { TransactionHistory } from 'components/Transactions/transactions';
 import transactions from 'components/Transactions/transactions.json';
-export const transaccion = () => {
+export const Transaccion = () => {
     return (
         <>
       <div>
