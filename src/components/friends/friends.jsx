@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FriendListItem = ({ avatar, name, isOnline }) => {
+export const FriendListItem = ({ avatar, name, isOnline }) => {
   const statusClass = isOnline ? 'status online' : 'status offline';
 
   return (
@@ -12,4 +12,3 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
   );
 };
 
-export default FriendListItem;

@@ -1,4 +1,4 @@
-import {Stadistics} from './stadistics';
+import {Stadistics} from 'components/stadistics/stadistics';
 import data from './data.json';
 
 export const STadistics = () => {

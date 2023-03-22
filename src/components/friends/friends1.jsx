@@ -2,7 +2,7 @@ import React from 'react';
 import { FriendListItem  } from 'components/friends/friends';
 
 
-const FriendList = ({ friends }) => {
+export const FriendList = ({ friends }) => {
   return (
     <ul className="friend-list">
       {friends.map((friend) => (
@@ -18,4 +18,3 @@ const FriendList = ({ friends }) => {
 };
 
 
-export default FriendList;
