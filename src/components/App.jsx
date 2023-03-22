@@ -1,10 +1,10 @@
-import  transaccions  from "./Transactions/transactions.json";
-import  data from "./stadistics/data.json";
-import  friends from "./friends/friends.json";
-import  user from "./socialProfile/user.json";
+import  transaccions  from "../data/transactions.json";
+import  data from "../data/data.json";
+import  friends from "../data/friends.json";
+import  user from "../data/user.json";
 
 
-import FriendListItem from "./friends/friends";
+import FriendList from "./friends/FriendList";
 import Stadistics from "./stadistics/stadistics";
 import TransactionHistory  from "./Transactions/transactions";
 import  Perfil  from "./socialProfile/social";
@@ -22,7 +22,7 @@ export const App = () => {
 
      <Stadistics title="Uploads stats" stats={data} />
 
-     <FriendListItem friends={friends} />
+     <FriendList friends={friends} />
 
      <TransactionHistory items={transaccions} />
     </>
