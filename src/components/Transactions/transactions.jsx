@@ -1,5 +1,5 @@
 import React from 'react';
-export const TransactionHistory = ({ items }) => {
+const TransactionHistory = ({ items }) => {
     return (
       <>
         <table className="transaction-history">
@@ -24,4 +24,4 @@ export const TransactionHistory = ({ items }) => {
     );
   };
   
-  
+  export default TransactionHistory;

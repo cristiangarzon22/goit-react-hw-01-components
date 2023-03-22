@@ -1,5 +1,5 @@
 import React from 'react';
-export const Perfil = ({ username, tag, location, avatar, stats}) => {
+const Perfil = ({ username, tag, location, avatar, stats}) => {
 const  {followers, views, likes} = stats;
 return (
 <>
@@ -34,3 +34,4 @@ return (
 );
 };
 
+export default Perfil;
