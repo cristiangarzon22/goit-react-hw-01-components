@@ -6,7 +6,7 @@ import  user from "../data/user.json";
 
 import FriendList from "./friends/FriendList";
 import Stadistics from "./stadistics/stadistics";
-import TransactionHistory  from "./Transactions/transactions";
+import Transaccion from "./Transactions/transactions1";
 import  Perfil  from "./socialProfile/social";
 export const App = () => {
   return (
@@ -24,7 +24,7 @@ export const App = () => {
 
      <FriendList friends={friends} />
 
-     <TransactionHistory items={transaccions} />
+     <Transaccion items={transaccions} />
     </>
   );
 };

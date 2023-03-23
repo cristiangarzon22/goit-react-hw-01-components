@@ -1,15 +1,24 @@
 import React from 'react';
-import css from "components/friends/FriendListItem";
+import css from "./FriendListItem.module.css";
+import PropTypes from "prop-types";
 const FriendListItem = ({ avatar, name, isOnline }) => {
-  const statusClass = isOnline ? 'status online' : 'status offline';
+  const statusClass = isOnline ? `statusOnline` : `statusOffline`;
 
   return (
     <li className={css.item}>
-      <span className={statusClass}></span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
+      <span className={`${css[statusClass]}`}></span>
+      <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+      <p className={css.name}>{name}</p>
     </li>
   );
 };
 
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+};
+
+
 export default FriendListItem;
+
