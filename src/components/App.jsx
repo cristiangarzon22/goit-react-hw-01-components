@@ -11,7 +11,6 @@ import  Perfil  from "./socialProfile/social";
 export const App = () => {
   return (
     <>
-    <h1>hola</h1>
     <Perfil
      username={user.username}
      tag={user.tag}

@@ -11,16 +11,16 @@ const Stadistics = ({stats,title}) => {
    {stats.map((e) => (
     <><li key={e.id} className={css.item}>
            <span className={css.label}>{e.label}</span>
-           <span className={css.percentage}>${e.percentage}%</span>
+           <span className={css.percentage}>{e.percentage}%</span>
        </li><li key={e.id} className={css.item}>
                <span className={css.label}>{e.label}</span>
-               <span className={css.percentage}>${e.percentage}%</span>
+               <span className={css.percentage}>{e.percentage}%</span>
            </li><li key={e.id} className={css.item}>
                <span className={css.label}>{e.label}</span>
-               <span className={css.percentage}>${e.percentage}%</span>
+               <span className={css.percentage}>{e.percentage}%</span>
            </li><li key={e.id} className={css.item}>
                <span className={css.label}>{e.label}</span>
-               <span className={css.percentage}>${e.percentage}%</span>
+               <span className={css.percentage}>{e.percentage}%</span>
            </li></>
     ))}
   </ul>
