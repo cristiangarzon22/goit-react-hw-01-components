@@ -1,8 +1,9 @@
 .statistics{
   background-color: rgb(231, 140, 35);
-  width: 90%;
+  width: 40%;
   padding: 15px;
   margin: auto;
+  margin-right: 380px;
   display: flex;
   justify-content: center;
   align-items: center;
